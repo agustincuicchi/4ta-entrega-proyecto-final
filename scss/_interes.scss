@@ -1,0 +1,30 @@
+.puntos {
+	display: flex;
+	flex-direction: column;
+	text-align: center; 
+}
+
+.mapa {
+	width: 85%;
+	height: 500px;
+	margin: 10px;
+	padding: 10px;
+	border: lightblue solid 3px;
+}
+
+.puntos__div {
+	border: lightblue solid 5px;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #e3f2fd;
+}
+
+.puntos__div--titulos {
+	font-size: 25px;
+	background-color: lightblue;
+	border: black 2px solid;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 5px;
+}
