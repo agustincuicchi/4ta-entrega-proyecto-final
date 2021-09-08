@@ -1,13 +1,11 @@
 .fieldset {
-	border-color: black;
 	margin: 20px;
 	padding: 15px;
-	background-color: white;
 }
 
 .formulario { 
 	margin: 20px;
-	padding: 10px; 
+	padding: 10px;
 }
 
 form {
@@ -59,4 +57,16 @@ textarea {
 .hcontacto {
 	text-align: center;
 	font-size: 30px;
+}
+
+input, textarea {
+  border: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  padding-left: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid lightblue;
 }
