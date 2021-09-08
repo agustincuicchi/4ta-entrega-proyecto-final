@@ -5,9 +5,14 @@
 }
 //cierre reseteo
 //general
-.logo {
+@mixin centrar {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+.logo {
+	@include centrar();
 	background-color: white; 
 }
 
@@ -75,9 +80,7 @@ p {
 .bienvenida, .imagenBienvenida {
 	margin: 10px;
 	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include centrar();
 	flex-wrap: wrap;
 }
 
@@ -130,8 +133,7 @@ p {
 }
 
 .info {
-	display: flex;
-	align-items: center;
+	@include centrar();
 	flex-direction: column;
 	font-size: 25px;
 	margin: 20px;
@@ -143,8 +145,7 @@ p {
 	text-align: center;
 	padding: 40px 200px;
 	background: linear-gradient(to right, #076585, #fff);
-	display: flex;
-	justify-content: center;
+	@include centrar();
 }
 
 .widgets {
@@ -181,8 +182,7 @@ p {
 }
 
 .footer {
-	display: flex;
-	justify-content: center;
+	@include centrar();
 	background-color: #e3f2fd;
 	padding: 20px;
 }
