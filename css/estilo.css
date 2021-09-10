@@ -17,19 +17,34 @@
   transform: translateY(25px); }
 
 h1 {
-  color: #0080FF;
-  font-size: 40px;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px; }
-
-h2 {
   color: #2E2E2E;
   word-spacing: 3px;
   text-align: center;
   margin: 20px;
-  padding: 20px; }
+  padding: 20px;
+  animation-name: text-focus-in;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none; }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    opacity: 1; } }
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 15px;
+  padding: 15px;
+  background: linear-gradient(to left, #E0EAFC, #CFDEF3);
+  border-radius: 12px; }
 
 h3 {
   text-align: center;
@@ -95,7 +110,7 @@ p {
   text-align: center;
   font-size: 35px; }
 
-.nosotros__texto h4 {
+.nosotros__texto h3 {
   font-size: 50px;
   text-align: center; }
 
@@ -278,9 +293,22 @@ p {
   margin: 5px;
   padding: 5px; }
 
+.interes__h3 {
+  text-align: center;
+  background: none;
+  display: flex;
+  align-self: center; }
+
 .fieldset {
   margin: 20px;
-  padding: 15px; }
+  padding: 15px;
+  background: linear-gradient(#2980B9, #6DD5FA, #FFFFFF);
+  border: grey solid 3px; }
+
+legend {
+  font-size: 27px;
+  padding: 20px;
+  text-transform: uppercase; }
 
 .formulario {
   margin: 20px;
@@ -314,6 +342,9 @@ form {
   transform: translateY(5px);
   transition: cubic-bezier(0.215, 0, 0.61, 1) 0.5s; }
 
+.boton:focus {
+  border: 3px solid black; }
+
 textarea {
   max-height: 210px; }
 
@@ -327,7 +358,8 @@ textarea {
 
 .hcontacto {
   text-align: center;
-  font-size: 30px; }
+  font-size: 30px;
+  background: none; }
 
 input, textarea {
   border: none;
