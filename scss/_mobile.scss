@@ -93,6 +93,12 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+	.nosotros__texto h3 {
+		font-size: 35px;
+	}
+	.nosotros__texto p, .nosotros__texto b{
+		font-size: 27px;
+	}
 	//contacto
 	.boton { 
 		margin: 10px;
@@ -161,6 +167,13 @@
 	table {
 		display: block;
 		overflow-x: auto;
+	}
+	.interes__h3 {
+		translate: 0 0;
+		width: 92%;
+	}
+	.interes__bg {
+		height: 550px;
 	}
 	//cierre puntos de interes
 	//galeria

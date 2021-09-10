@@ -33,5 +33,23 @@
 	text-align: center;
 	background: none;
 	display: flex;
-	align-self: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: 30px;
+	margin: 15px;
+	padding: 15px; 
+	background: lightblue;
+	border-radius: 12px;
+	translate: 750px 40px;
+	width: 40%;
+	border: 3px solid black;
+}
+
+.interes__bg {
+	height: 350px;
+	background-image: url(../assets/img/bg-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
 }
